@@ -73,8 +73,7 @@ export default function Home() {
             <BusinessCard
               key={business.id}
               business={business}
-              // ▼ ここが onEdit になっていることを確認 ▼
-              onEdit={() => handleEditClick(business)}
+              onClick={() => handleEditClick(business)}
             />
           ))}
         </div>
